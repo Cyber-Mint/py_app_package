@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='py_app_package',
-      version='0.1',
+      version='0.1.0',
       description='A packaging template application ',
       classifiers=[
         'Development Status :: 3 - Alpha',
@@ -23,6 +23,4 @@ setup(name='py_app_package',
       entry_points = {
         'console_scripts': ['app-cli=app.app_cli:main'],
       },
-      test_suite='nose.collector',
-      tests_require=['nose'],
       zip_safe=False)
