@@ -10,9 +10,6 @@ class Test_app_cli(TestCase):
 
         with redirect_stdout(f):
             main()
-        s=str(f)
-        self.assertTrue(isinstance(s, str))
+
+        self.assertTrue(isinstance(f.getvalue(), str))
         
-
-
-
