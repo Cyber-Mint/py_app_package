@@ -44,8 +44,8 @@ which will yield something like::
     Hello World
     From : Kara Mclaughlin 
     
-To run unit tests::
-
+Unit Tests
+----------
     :~ pip3 install tox
     :~ tox
 
