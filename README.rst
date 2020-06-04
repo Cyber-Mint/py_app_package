@@ -1,7 +1,13 @@
+==============
 py_app_package
+==============
+-------------------------
+A python3 template for packaging your application
+-------------------------
+
+Cloning source
 --------------
 
-## Cloning source
 Get this package by:
     git clone git@github.com:Cyber-Mint/py_app_package.git
 
@@ -55,7 +61,8 @@ To run unit tests:
     &~ pip3 install tox
     &~ tox
 
----
+
+.. |hr| raw:: html
 Copyright |copy| 2020, Cyber-Mint (Pty) Ltd |---| all rights reserved.
 
 .. |copy| unicode:: 0xA9 .. copyright sign
