@@ -14,15 +14,14 @@ Get this package by:"
 
 Activate the virtual environment with venv before coding, testing & packaging::
 
-    cd py_app_package
-    python3 -m venv ~/dev/py_app_package 
-    source bin/activate
+    :~ cd py_app_package
+    :~ python3 -m venv ~/dev/py_app_package 
+    :~ source bin/activate
   
 A packaging template for a package-able python application.
 
     >>> import app
     >>> print app.say_hello()
-
 
 Installing
 ----------
@@ -30,17 +29,15 @@ Installing
 To install source (development)::
 
     :~ pip3 install -e .
-    
    
 But, to install from wheel binary::
 
     :~ pip3 install wheel
     :~ pip3 install .
-    
 
 Once it is installed you can run the command line interface defnied in setup.py::
 
-    $~ app-cli
+    :~ app-cli
 
 which will yield something like::
 
@@ -49,9 +46,8 @@ which will yield something like::
     
 To run unit tests::
 
-    &~ pip3 install tox
-    &~ tox
-
+    :~ pip3 install tox
+    :~ tox
 
 ====================================
 
