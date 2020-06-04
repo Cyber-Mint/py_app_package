@@ -2,7 +2,7 @@
 Change Log
 ==========
 
-0.1.1 - 0.1.7 (2020-06-03)
+0.1.1 - 0.1.9 (2020-06-03)
 ------------------
 * Deploy to pypi
 * Added Classifier: Development Status :: 1 - Planning
