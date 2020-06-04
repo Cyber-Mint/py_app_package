@@ -116,7 +116,7 @@ Publish to PyPi
 Some notes on publishing to PyPi. Always publish to testpypi first!
 
     $ rm -rf dist/ build/
-    $ git status
+    $ git status   #to make sure you have committed the latest version
     $ python3 setup.py sdist bdist_wheel
     $ twine check dist/*
     $ python3 -m twine upload --repository testpypi dist/* --verbose
@@ -145,12 +145,28 @@ A reminder for the maintainers on how to deploy.
 
        $ git push --follow-tags
 
-4. Th CI tool should automatically deploy the tagged release to PyPI
-   if the automated tests pass.
+4. Th CI tool (once you have set one up) should automatically deploy the 
+   tagged release to PyPI if the automated tests pass.
 
-Publishing to 
+Publishing to PyPi
+------------------
 
+First perform all your tests on test.pypi.org by registering there.
+The create a token and save it safely somewhere.
 
+    # After the build steps above you may upload your dist/* files
+    # CHANGELOG and setup.py are the only two files which refer to a version.
+
+    $ python3 -m twine upload --repository testpypi dist/* --verbose
+    # this will ask you for a username: enter __token__
+    # and it will ask for a password: paste the long token string(in full)
+    
+Testing the install will require the sue of specifying the testpypi repo  
+as follows::
+
+    sudo pip install --extra-index-url https://test.pypi.org/simple/ py-app-package
+
+This will fetch the depdendencies from the main pypi repo and your package from the specified pypi repo.
 
 ====================================
 
