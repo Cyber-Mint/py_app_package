@@ -5,6 +5,10 @@ py_app_package
 A Python3 template for packaging your application
 -------------------------------------------------
 
+This package is a working template/example of a python3 project ready for 
+packaging and distributing via PyPi.
+
+
 Cloning source
 --------------
 

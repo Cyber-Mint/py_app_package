@@ -93,7 +93,9 @@ Ready to contribute? Here's how to set up for local development.
 
     $ git add .
     $ git commit -m "Your detailed description of your changes."
-    $ git push origin name-of-your-bugfix-or-feature
+    $ git tag -a vX.Y.Z -m "Release Tag"
+    $ git push origin name-of-your-bugfix-or-feature --follow-tags
+    
 
 7. Submit a pull request through the GitHub website.
 
@@ -107,6 +109,18 @@ Before you submit a pull request, check that it meets these guidelines:
    your new functionality into a function with a docstring, and add the
    feature to the list in CHANGELOG.rst.
 3. The pull request should work for Python 3.8+
+
+Publish to PyPi
+---------------
+
+Some notes on publishing to PyPi. Always publish to testpypi first!
+
+    $ rm -rf dist/ build/
+    $ git status
+    $ python3 setup.py sdist bdist_wheel
+    $ twine check dist/*
+    $ python3 -m twine upload --repository testpypi dist/* --verbose
+
 
 Tips
 ----
@@ -133,6 +147,9 @@ A reminder for the maintainers on how to deploy.
 
 4. Th CI tool should automatically deploy the tagged release to PyPI
    if the automated tests pass.
+
+Publishing to 
+
 
 
 ====================================

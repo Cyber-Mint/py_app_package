@@ -2,11 +2,12 @@
 Change Log
 ==========
 
-0.1.1 (2020-06-03)
+0.1.1 - 0.1.5 (2020-06-03)
 ------------------
 * Deploy to pypi
 * Added Classifier: Development Status :: 1 - Planning
-
+* Fixed install_requires=['Faker>=4.1.0', ], in setup.py
+* Added publishing instructions to CONTRIBUTING.rst
 
 0.1.0 (2020-06-03)
 ------------------
