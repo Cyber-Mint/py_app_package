@@ -8,16 +8,16 @@ A python3 template for packaging your application
 Cloning source
 --------------
 
-Get this package by:
+Get this package by:"
+
     git clone git@github.com:Cyber-Mint/py_app_package.git
 
-Activate the virtual environment with venv before coding, testing & packaging   
+Activate the virtual environment with venv before coding, testing & packaging::
+
     cd py_app_package
     python3 -m venv ~/dev/py_app_package 
     source bin/activate
   
-
-
 A packaging template for a package-able python application.
 
     >>> import app
