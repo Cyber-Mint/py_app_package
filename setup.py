@@ -6,7 +6,7 @@ with open('README.rst') as file:
     
     
 setup(name='py_app_package',
-    version='0.1.5',
+    version='0.1.7',
     description='A packaging template application ',
     long_description=long_description,
     long_description_content_type='text/x-rst',
@@ -23,7 +23,7 @@ setup(name='py_app_package',
     author_email='bank-builder@cyber-mint.com',
     license='MIT',
     packages=['app'],
-    setup_requires=[
+    install_requires=[
       'Faker>=4.1.0',
     ],
     include_package_data=True,
