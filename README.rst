@@ -8,7 +8,7 @@ A python3 template for packaging your application
 Cloning source
 --------------
 
-Get this package by:"
+Get this package by::
 
     git clone git@github.com:Cyber-Mint/py_app_package.git
 
