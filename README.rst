@@ -46,6 +46,9 @@ which will yield something like::
     
 Unit Tests
 ----------
+
+To run the unit tests::
+
     :~ pip3 install tox
     :~ tox
 
