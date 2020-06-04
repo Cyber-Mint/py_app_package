@@ -1,12 +1,17 @@
 from setuptools import setup
 
+
+with open('README.rst') as file:
+    long_description = file.read()
+    
+    
 setup(name='py_app_package',
-    version='0.1.0',
+    version='0.1.3',
     description='A packaging template application ',
-    long_description='README.rst',
+    long_description=long_description,
     long_description_content_type='text/x-rst',
     classifiers=[
-      'Development Status :: 4 - Beta',
+      'Development Status :: 1 - Planning',
       'License :: OSI Approved :: MIT License',
       'Programming Language :: Python :: 3',
       'Operating System :: POSIX :: Linux',

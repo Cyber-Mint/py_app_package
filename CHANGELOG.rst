@@ -2,6 +2,12 @@
 Change Log
 ==========
 
+0.1.1 (2020-06-03)
+------------------
+* Deploy to pypi
+* Added Classifier: Development Status :: 1 - Planning
+
+
 0.1.0 (2020-06-03)
 ------------------
 * py_app_package Initial Commit
