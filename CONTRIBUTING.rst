@@ -81,13 +81,13 @@ Ready to contribute? Here's how to set up for local development.
    pass the test cases, fixup your PEP8 compliance,
    and check for any code style issues:
 
-    $ pip3 install tox autopep8 flake8 pycodestyle
+    $ pip3 install tox autopep8 flake8 black
     $ tox
     $ autopep8 -r -i app
     $ flake8 app
-    $ pycodestyle app
+    $ python -m black app
 
-   To get autopep8 and pycodestyle, just pip install them into your virtualenv.
+   To get autopep8 and black, just pip install them into your virtualenv.
 
 6. Commit your changes and push your branch to GitHub::
 
@@ -123,12 +123,9 @@ A reminder for the maintainers on how to deploy.
 
 1. Update CHANGELOG.rst with the intended release number Z.Y.X and commit to git.
 
-2. Bump the version number with bumpversion. This creates a new git commit,
-   as well as an annotated tag Z.Y.X for the release.
-   If your current version is Z.Y.W and the new version is Z.Y.X call::
+2. Bump the version number X.Y.Z in setup.py according to Major.Minor.Patch::
 
-       $ python -m pip install bump2version
-       $ bump2version --current-version Z.Y.W --new-version Z.Y.X patch
+    $ git tag -a vX.Y.Z -m "Initial commit"
 
 3. Push the release commit and new tag up::
 

@@ -5,7 +5,6 @@ from contextlib import redirect_stdout
 
 
 class Test_app_cli(TestCase):
-
     def test_cli(self):
         f = StringIO()
 

@@ -29,10 +29,12 @@ Change Log
         └── tox.ini
 
 
-* Added demo unit tests
+* Added demo unit tests with tox
 * Added usage documentation
 * Added CHANGELOG.rst
 * Added CONTRIBUTING.rst
+* Added PEP8, flake8 and pystyle guidelines
+
 
 ====================================
 

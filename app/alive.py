@@ -4,4 +4,4 @@ fake = Faker()
 
 
 def say_hello():
-    return (u'Hello World\nFrom : {} '.format(fake.name()))
+    return u"Hello World\nFrom : {} ".format(fake.name())
