@@ -6,7 +6,7 @@ with open('README.rst') as file:
     
     
 setup(name='py_app_package',
-    version='0.1.3',
+    version='0.1.4',
     description='A packaging template application ',
     long_description=long_description,
     long_description_content_type='text/x-rst',
