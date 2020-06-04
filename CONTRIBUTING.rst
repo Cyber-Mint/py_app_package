@@ -81,7 +81,8 @@ Ready to contribute? Here's how to set up for local development.
    pass the test cases, fixup your PEP8 compliance,
    and check for any code style issues:
 
-    $ vox
+    $ pip3 install tox autopep8 flake8 pycodestyle
+    $ tox
     $ autopep8 -r -i app
     $ flake8 app
     $ pycodestyle app
