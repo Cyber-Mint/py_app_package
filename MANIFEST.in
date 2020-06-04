@@ -1,4 +1,1 @@
 include README.rst
-include docs/*.md
-#include docs/*.rst
-#include app/data.json

@@ -23,7 +23,7 @@ setup(name='py_app_package',
     author_email='bank-builder@cyber-mint.com',
     license='MIT',
     packages=['app'],
-    install_requires=[
+    setup_requires=[
       'Faker>=4.1.0',
     ],
     include_package_data=True,
