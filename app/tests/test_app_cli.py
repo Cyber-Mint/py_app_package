@@ -3,6 +3,7 @@ from app.app_cli import main
 from io import StringIO
 from contextlib import redirect_stdout
 
+
 class Test_app_cli(TestCase):
 
     def test_cli(self):
@@ -12,4 +13,3 @@ class Test_app_cli(TestCase):
             main()
 
         self.assertTrue(isinstance(f.getvalue(), str))
-        
