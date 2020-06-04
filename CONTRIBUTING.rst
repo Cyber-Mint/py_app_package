@@ -82,9 +82,9 @@ Ready to contribute? Here's how to set up for local development.
    and check for any code style issues:
 
     $ vox
-    $ autopep8 -r -i africanus
-    $ flake8 africanus
-    $ pycodestyle africanus
+    $ autopep8 -r -i app
+    $ flake8 app
+    $ pycodestyle app
 
    To get autopep8 and pycodestyle, just pip install them into your virtualenv.
 
