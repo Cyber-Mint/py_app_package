@@ -2,7 +2,7 @@
 py_app_package
 ==============
 -------------------------
-A python3 template for packaging your application
+A Python3 template for packaging your application
 -------------------------
 
 Cloning source
@@ -35,7 +35,7 @@ But, to install from wheel binary::
     :~ pip3 install wheel
     :~ pip3 install .
 
-Once it is installed you can run the command line interface defnied in setup.py::
+Once it is installed you can run the command line interface defined in setup.py::
 
     :~ app-cli
 
